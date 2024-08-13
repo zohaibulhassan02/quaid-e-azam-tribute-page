@@ -10,6 +10,7 @@
   box-shadow: none;
   margin-bottom: 10px;
   border: 1px solid #b2ebf2;
+  background-color: var(--color-primary) !important;
 }
 
 .faq-summary {
