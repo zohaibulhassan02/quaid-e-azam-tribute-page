@@ -61,7 +61,7 @@ const EducationTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               December 25, 1876
             </TimelineOppositeContent>
@@ -107,7 +107,7 @@ const EducationTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1882
             </TimelineOppositeContent>
@@ -153,7 +153,7 @@ const EducationTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1887
             </TimelineOppositeContent>
@@ -200,7 +200,7 @@ const EducationTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1892
             </TimelineOppositeContent>
@@ -246,7 +246,7 @@ const EducationTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1896
             </TimelineOppositeContent>
@@ -292,7 +292,7 @@ const EducationTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1897
             </TimelineOppositeContent>
@@ -348,7 +348,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1906
             </TimelineOppositeContent>
@@ -394,7 +394,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1913
             </TimelineOppositeContent>
@@ -440,7 +440,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1916
             </TimelineOppositeContent>
@@ -487,7 +487,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1920
             </TimelineOppositeContent>
@@ -533,7 +533,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1928
             </TimelineOppositeContent>
@@ -579,7 +579,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1930
             </TimelineOppositeContent>
@@ -625,7 +625,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1934
             </TimelineOppositeContent>
@@ -671,7 +671,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1940
             </TimelineOppositeContent>
@@ -717,7 +717,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1942
             </TimelineOppositeContent>
@@ -763,7 +763,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1943
             </TimelineOppositeContent>
@@ -809,7 +809,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1946
             </TimelineOppositeContent>
@@ -855,7 +855,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1947
             </TimelineOppositeContent>
@@ -901,7 +901,7 @@ const PoliticalTimeline = ({ title }) => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="#0fffc8"
+              color="#333"
             >
               1947
             </TimelineOppositeContent>
