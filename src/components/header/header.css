@@ -1,84 +1,345 @@
-header{
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+header {
+  height: 100vh;
+
+  padding-top: 2.5em;
+  overflow: hidden;
+  /* background-image: url("../../assets/NATIONAL\ HERO.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
 }
 
-.header__container{
-    height: 100%;
-    position: relative;
-    text-align: center;
+.header__container {
+  height: 100%;
+  width: 100% !important;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+header h1 {
+  font-weight: 100;
+  font-size: 6rem;
+  font-family: "Foldit", sans-serif;
+  font-weight: 600;
+  word-spacing: 4.5px;
+  line-height: normal;
+}
+
+header h5 {
+  color: var(--color-primary-variant);
+}
+
+/* ================== MARQUEE REELS BACKGROUND ================ */
+
+.marquee-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height to accommodate all 3 marquees */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure even spacing between marquees */
+}
+
+.marquee {
+  width: 100%;
+  height: 33.33%;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.marquee:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Height of the gradient overlay */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  z-index: 2; /* Ensure overlay is above the marquee content */
+  pointer-events: none; /* Ensure overlay does not interfere with user interaction */
+}
+
+.marquee:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Height of the gradient overlay */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  z-index: 2; /* Ensure overlay is above the marquee content */
+  pointer-events: none; /* Ensure overlay does not interfere with user interaction */
+}
+
+/* Blur Color Overlay */
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 1;
+}
+
+/* ================== IMAGE MARQUEE ================ */
+
+.image_wrapper {
+  /* margin: 0 10px 0 10px; */
+  padding: 10px; /* Remove padding inside the image wrapper */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0; */
+  /* width: 300px;
+  height: 300px; */
+  overflow: hidden; /* Hide overflow if the image exceeds the wrapper */
+}
+
+.image_wrapper img {
+  width: 20rem;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.image_wrapper img:hover {
+  filter: brightness(1.5); /* Increase brightness on hover */
+  transform: scale(1.05); /* Slightly scale up the image for emphasis */
+}
+
+/* ================== TYPEWRITER ================ */
+
+/* Typewriter container */
+.typewriter {
+  display: inline-block;
+  overflow: hidden; /* Hide the overflow of the text */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  border-right: 0.15em solid #46ff0f; /* The cursor effect */
+  animation: blink-caret 0.75s step-end infinite, typing 4s steps(30, end);
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  } /* Start with an empty width */
+  to {
+    width: 100%;
+  } /* End with full width */
+}
+
+/* Animation for blinking cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  } /* Invisible cursor */
+  50% {
+    border-color: #46ff0f;
+  } /* Visible cursor */
+}
+
+/* Optional: Styling for the text */
+.typewriter-text {
+  font-family: monospace; /* Font style to mimic a typewriter */
+  font-size: 1.5rem; /* Font size of the text */
+  color: #fff; /* Text color */
+  background-color: #000; /* Background color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
 }
 
 /* ================== CTA ================ */
 
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 /* ================== HEADER SOCIALS ================ */
 
-.header__socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
 }
 
-.header__socials::after{
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background-color: var(--color-primary);
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: var(--color-primary);
 }
 
 /* ================== ME ================ */
 
-.me{
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-    object-fit: cover;
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  object-fit: cover;
 }
 
+.header-bottom-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.header-bottom-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.quaid {
+  position: absolute;
+  left: calc(65% - 11rem);
+  bottom: calc(-3%);
+  width: 25rem;
+  height: 29rem;
+}
+
+.header-bottom-left h3 {
+  align-self: flex-start;
+  color: var(--color-light);
+}
+
+.header-bottom-right h5 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /* margin: 50px auto; */
+  background: #46ff0f; /* Background color */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure nothing overflows out of the circle */
+}
+
+.circle-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  transform: rotate(0deg); /* Initial rotation */
+  animation: rotate 10s linear infinite;
+}
+
+.circle-text span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: 0 100px; /* Center of the span at the edge of the circle */
+  transform: rotate(
+    calc(360deg / 20 * var(--i))
+  ); /* Distribute letters around the circle */
+}
+
+.center-icon {
+  z-index: 1; /* Ensure the icon stays on top */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* ================== SCROLL DOWN ================ */
 
-.scroll__down{
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-size: 0.9rem;
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-size: 0.9rem;
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ================== */
 
 @media screen and (max-width: 1024px) {
-    header{
-        height: 68vh;
-    }
+  header {
+    height: 68vh;
+  }
+  header h1 {
+    font-size: 6rem;
+    word-spacing: 4px;
+    padding-top: 1rem;
+  }
+  .typewriter-text {
+    font-size: 1.3rem;
+  }
 }
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) ================== */
 
 @media screen and (max-width: 600px) {
-    header{
-        height: 100vh;
-    }
-    .header__socials, .scroll__down{
-        display: none;
-    }
+  header {
+    height: 85vh;
+  }
+  header h1 {
+    font-size: 5rem;
+    word-spacing: 3px;
+    padding-top: 0.7rem;
+  }
+  .me {
+    padding-top: 2rem;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+  .typewriter-text {
+    font-size: 1.2rem;
+  }
 }

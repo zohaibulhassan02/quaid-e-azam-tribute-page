@@ -1,46 +1,57 @@
 import React from "react";
 import "./about.css";
-import PROFILE from '../../assets/profile-img.png';
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import QUAID from "../../assets/quaid e azam.png";
+import { GiPublicSpeaker } from "react-icons/gi";
+import { GiCrossedChains } from "react-icons/gi";
+import { FaEye } from "react-icons/fa";
+import { GiShintoShrineMirror } from "react-icons/gi";
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h5>Get To Know More</h5>
+      <h2>About Quaid e Azam</h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={PROFILE} alt="me-about" />
+            <img src={QUAID} alt="Quaid e Azam Muhammad Ali Jinnah" />
           </div>
         </div>
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__card-icon" />
-              <h5>Experience</h5>
-              <small>2+ Years Working</small>
+              <GiPublicSpeaker className="about__card-icon" />
+              <h5>Leadership</h5>
+              <small>Founder of Pakistan</small>
             </article>
 
             <article className="about__card">
-              <FiUsers className="about__card-icon" />
-              <h5>Clients</h5>
-              <small>55+ Worldwide</small>
+              <GiCrossedChains className="about__card-icon" />
+              <h5>Independence</h5>
+              <small>Guided Pakistan to Freedom</small>
             </article>
 
             <article className="about__card">
-              <VscFolderLibrary className="about__card-icon" />
-              <h5>Projects</h5>
-              <small>30+ Completed</small>
+              <FaEye className="about__card-icon" />
+              <h5>Vision</h5>
+              <small>Advocate for Muslim Rights</small>
+            </article>
+
+            <article className="about__card">
+              <GiShintoShrineMirror className="about__card-icon" />
+              <h5>Legacy</h5>
+              <small>Father of the Nation</small>
             </article>
           </div>
 
-          <p>Welcome, fellow wanderer of the digital realm, to my virtual abode! I am a weaver of code, a symphony conductor of pixels, and a maestro of web experiences. Step into my world, where imagination meets innovation, and allow me to be your guide through the wonders of the digital universe.</p>
-
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <p>
+            Quaid-e-Azam Muhammad Ali Jinnah was the visionary leader who
+            founded Pakistan in 1947, securing a homeland for Muslims in the
+            Indian subcontinent. His enduring legacy as the Father of the Nation
+            is marked by his principles of unity, faith, and discipline, which
+            continue to inspire Pakistanis today.
+          </p>
         </div>
       </div>
     </section>

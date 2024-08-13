@@ -1,0 +1,38 @@
+.faq-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-accordion {
+  box-shadow: none;
+  margin-bottom: 10px;
+  border: 1px solid #b2ebf2;
+}
+
+.faq-summary {
+  font-size: 18px;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-details {
+  background-image: url("../../assets/acc-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 30px 15px !important;
+  border-top: 1px solid #b2ebf2;
+}
+/* Accordian Background */
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
+  background-color: var(--color-primary) !important;
+}
+/* Accordian Heading */
+.css-2ulfj5-MuiTypography-root {
+  font-family: "Archivo", sans-serif !important;
+}

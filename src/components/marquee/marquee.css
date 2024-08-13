@@ -1,0 +1,70 @@
+.marquee-container {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-diagonal-1,
+  .marquee-diagonal-2 {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    transform-origin: center;
+    overflow: hidden;
+  }
+  
+  .marquee-diagonal-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(-10deg);
+    z-index: 1; /* Ensures it appears above the background */
+    margin-top: 40px; /* Adjust margin for spacing */
+  }
+  
+  .marquee-diagonal-2 {
+    top: 0;
+    right: 0;
+    transform: rotate(10deg);
+    z-index: 2; /* Ensures it appears above the first diagonal marquee */
+    margin-top: 50px;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    padding: 0 100%; /* Adjust this for spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    line-height: 50px; /* Ensure text is centered vertically */
+    border-radius: 5px; /* Rounded corners */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+  }
+  
+  .marquee-diagonal-1 .marquee-content {
+    animation-name: marquee-diagonal-1;
+  }
+  
+  .marquee-diagonal-2 .marquee-content {
+    animation-name: marquee-diagonal-2;
+  }
+  
+  @keyframes marquee-diagonal-1 {
+    from {
+      transform: translate(100%, 100%);
+    }
+    to {
+      transform: translate(-100%, -100%);
+    }
+  }
+  
+  @keyframes marquee-diagonal-2 {
+    from {
+      transform: translate(-100%, 100%);
+    }
+    to {
+      transform: translate(100%, -100%);
+    }
+  }
+  
